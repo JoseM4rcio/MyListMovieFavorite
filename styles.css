@@ -1,0 +1,57 @@
+body {
+  min-width: 100dvh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.input-wrapper input {
+  width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+
+.search button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.group {
+  display: flex;
+}
+
+main {
+  text-align: center;
+}
+
+main h5 {
+  margin-top: 30px;
+}

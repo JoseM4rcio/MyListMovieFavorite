@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de filmes favoritos.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><i class="bi bi-film"> Meus filmes</i></a>
+      </div>
+      <section id="search-container">
+        <div class="group">
+          <div class="input-wrapper">
+            <label for="movie-name">Nome:</label>
+            <input
+              type="text"
+              id="movie-name"
+              placeholder="Digite o nome do filme"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="movie-year">Ano:</label>
+            <input
+              type="text"
+              id="movie-year"
+              placeholder="Digite o ano do filme (opcional)"
+            />
+          </div>
+          <div class="search">
+            <button id="search-button"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <h5>Pesquise e adicione sua lista de filmes favoritos!</h5>
+      <section id="movie-list"></section>
+      <article id="modal-overlay" class="overlay">
+        <section id="modal-background"></section>
+        <section id="modal-container"></section>
+      </article>
+    </main>
+    <script src="./key.js"></script>
+    <script src="./script.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./src/notie-master/dist/notie.min.js"></script>
+  </body>
+</html>
